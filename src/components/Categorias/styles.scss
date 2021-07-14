@@ -1,0 +1,58 @@
+.Container {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  line-height: 2rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-900);
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: var(--gray-800);
+      font-size: larger;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    font-size: 1rem;
+
+    a {
+      min-width: 6rem;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 0.8rem;
+
+      box-shadow: 1px 1px 1px var(--gray-100);
+
+      border: 1px solid var(--gray-100);
+      border-radius: 50px;
+      padding: 0.2rem;
+      color: var(--gray-800);
+
+      transition: 0.3s;
+
+      & + a {
+        margin-left: 1.4rem;
+      }
+
+      &:hover {
+        background-color: var(--blue);
+        color: var(--white);
+        font-weight: 700;
+      }
+    }
+  }
+}

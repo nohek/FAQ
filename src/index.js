@@ -1,10 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {App} from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Header } from "./components/Header";
+import { Categories } from "./components/Categorias/index";
+import { Questions } from "./components/Questions/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Categories />
+    <Questions />
   </React.StrictMode>,
-  document.getElementById('root')
+
+  document.getElementById("root")
 );
